@@ -1,4 +1,13 @@
-
+/*
+* File: Rombusz.java
+* Author: Hajdara Patrik
+* Copyright: 2023, Hajdara Patrik
+* Group: SZOFT II/2/N
+* Date: 2023-01-10
+* Github: https://github.com/06776/
+* Licenc: GNU GPL
+* Warning: A kodban torteno esetlegesen elofordulo hibakert nem all modomban felelosseget vallalni
+*/
 
 package lan.zold;
 
