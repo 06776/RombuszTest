@@ -1,5 +1,7 @@
 package lan.zold;
 
+import java.util.InputMismatchException;
+
 public class Rombusz {
 
   public double calculateArea(double sideLength, double alpha) {
@@ -11,5 +13,12 @@ public class Rombusz {
 
   public double calculatePerimeter(double sideLength) {
     return 4 * sideLength;
+  }
+
+  public double calculateArea2(double sideLength, double alpha) {
+    if (sideLength <= 0 || alpha <= 0) {
+      throw new InputMismatchException();
+    }
+    return alpha;
   }
 }
