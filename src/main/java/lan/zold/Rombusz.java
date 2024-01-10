@@ -8,4 +8,8 @@ public class Rombusz {
     double radBeta = Math.toRadians(beta);
     return Math.pow(sideLength, 2) * Math.sin(radAlpha);
   }
+
+  public double calculatePerimeter(double sideLength) {
+    return 4 * sideLength;
+  }
 }
