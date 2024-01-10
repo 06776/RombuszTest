@@ -16,14 +16,9 @@ public class RombuszTest {
   public void testCalculateAreaSuccess() {
     double sideLength = 5.0;
     double alpha = 60.0;
-    double expectedArea =
-      Math.pow(sideLength, 2) * Math.sin(Math.toRadians(alpha));
+    double expectedArea = Math.pow(sideLength, 2) * Math.sin(Math.toRadians(alpha));
     double actualArea = rombusz.calculateArea(sideLength, alpha);
-    Assert.assertEquals(
-      actualArea,
-      expectedArea,
-      0.1,
-      "Hibas terulet szamitas"
+    Assert.assertEquals(actualArea, expectedArea, 0.1, "Hibas terulet szamitas"
     );
   }
 
@@ -36,5 +31,14 @@ public class RombuszTest {
     );
   }
 
-  
+  @Test(expectedExceptions = AssertionError.class)
+  public void testCalculateAreaFailure() {
+    double sideLength = 5.0;
+    double alpha = 60.0;
+    double expectedArea = 0;
+    double actualArea = rombusz.calculateArea(sideLength, alpha);
+    Assert.assertEquals(actualArea, expectedArea, 0.0001, "Area calculation is incorrect");
+    }
+
+    
 }
