@@ -1,3 +1,4 @@
+import lan.zold.Rombusz;
 import org.testng.annotations.BeforeTest;
 
 public class RombuszTest {
