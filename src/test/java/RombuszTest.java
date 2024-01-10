@@ -6,6 +6,6 @@ public class RombuszTest {
 
     @BeforeTest
     public void setUp() {
-        
+        this.rombusz = new Rombusz();
     }
 }
