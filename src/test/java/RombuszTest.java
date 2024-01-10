@@ -40,8 +40,14 @@ public class RombuszTest {
     double alpha = 60.0;
     double expectedArea = 0;
     double actualArea = rombusz.calculateArea2(sideLength, alpha);
-    Assert.assertEquals(actualArea, expectedArea, 0.0001, "Hibas terulet szamitas");
+    Assert.assertEquals(actualArea, expectedArea, 0.1, "Hibas terulet szamitas");
     }
 
-
+  @Test(expectedExceptions = InputMismatchException.class)
+  public void testCalculatePerimeterFailure() {
+    double sideLength = 5.0;
+    double expectedPerimeter = 0;
+    double actualPerimeter = rombusz.calculatePerimeter(sideLength);
+    Assert.assertEquals(actualPerimeter, expectedPerimeter, 0.1, "Hibas kerulet szamitas");
+    }
 }

@@ -21,4 +21,11 @@ public class Rombusz {
     }
     return alpha;
   }
+
+  public double calculatePerimeter2(double sideLength) {
+    if (sideLength <= 0) {
+      throw new InputMismatchException();
+    }
+    return 4 * sideLength;
+  }
 }
