@@ -1,3 +1,5 @@
+
+
 package lan.zold;
 
 import java.util.InputMismatchException;
